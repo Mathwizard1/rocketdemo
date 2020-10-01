@@ -320,7 +320,7 @@ function draw() {
       text("Not in position",rct.x-width/20,rct.y-height/4);}
       }
   }
-  if(((rct.isTouching(gr)||gr.y-rct.y<=90)&&flg.width<198&&z!=0)||m==0){
+  if(((rct.isTouching(gr)||gr.y-rct.y<=Math.round(90/683*height)&&flg.width<198&&z!=0)||m==0){
       z+=(1191-z);
       m=0;w=1;
       {
