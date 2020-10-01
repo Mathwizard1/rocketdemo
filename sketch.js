@@ -6,7 +6,7 @@ function preload(){
 
 function setup(){
   createCanvas(displayWidth,displayHeight*145/182);
-  rct=createSprite(width/2,Math.round(height-displayHeight/4)/2,Math.round(displayWidth/22),Math.round(displayHeight/4));
+  rct=createSprite(width/2,Math.round(height/2),Math.round(displayWidth/22),Math.round(height/3));
   gr=createSprite(width/2,height*29/31,width,4/31*height);
   st=createSprite(rct.x,rct.y,rct.width,rct.height/2);
   flg=createSprite(width/5,rct.y+5/62*height,Math.round(width/6.83),Math.round(height*7/124));
@@ -183,7 +183,7 @@ function up(){
     d=1;st.visible=true;
   }else{d=-3;{st.visible=false;}}
 
-  rct.y=camera.position.y+27/124*height+9/124*height*Math.abs(Math.sin(rct.rotation%180/180*PI));
+   rct.y=camera.position.y+26.5/124*height+9/124*height*Math.abs(Math.sin(rct.rotation%180/180*PI));
   //console.log(Math.abs(Math.round(gr.width*gr.height/(rct.y-4*gr.y)/3))-d);
 }
 
