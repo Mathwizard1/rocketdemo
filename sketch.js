@@ -5,7 +5,7 @@ function preload(){
 }
 
 function setup(){
-  createCanvas(displayWidth,displayHeight*145/182);
+  createCanvas(1366,768*145/182);
   rct=createSprite(width/2,Math.round(height/2),Math.round(displayWidth/22),Math.round(height/3));
   gr=createSprite(width/2,height*29/31,width,4/31*height);
   st=createSprite(rct.x,rct.y,rct.width,rct.height/2);
