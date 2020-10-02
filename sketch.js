@@ -183,7 +183,7 @@ function up(){
     d=1;st.visible=true;
   }else{d=-3;{st.visible=false;}}
 
-   rct.y=camera.position.y+26.75/124*height+9/124*height*Math.abs(Math.sin(rct.rotation%180/180*PI));
+   rct.y=camera.position.y+27/124*height+9/124*height*Math.abs(Math.sin(rct.rotation%180/180*PI));
   //console.log(Math.abs(Math.round(gr.width*gr.height/(rct.y-4*gr.y)/3))-d);
 }
 
